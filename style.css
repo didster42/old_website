@@ -1,0 +1,342 @@
+body{
+	margin: 0;
+	font-family: Lato;
+}
+
+.home{
+	height: 35rem;
+	width: 100%;
+	box-sizing: border-box;
+	background: #101010;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.home > a{
+	text-decoration: none;
+	color: white;
+}
+
+.logo{
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	font-weight: 700;
+
+}
+
+.heading{
+	font-weight: 600;
+}
+
+.home > p{
+	font-weight: 350;
+	color: #ddd;
+	width: 50%;
+	line-height: 2;
+}
+
+.white{
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+	padding: 0.25rem 0;
+	cursor: pointer;
+}
+
+.white:hover{
+	border-bottom: 1px solid white;
+}
+
+.blogTitles{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-top: 5rem;
+}
+
+.post{
+	width: 50%;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 3rem;
+}
+
+.title{
+	font-size: 2.25rem;
+	font-weight: 900;
+}
+
+.des{
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.date{
+	color: #444;
+}
+
+.read{
+	font-weight: 700;
+	font-size: 1.2rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: grey;
+	border-bottom: 2px solid grey;
+	transition: all 0.1s ease-in-out;
+}
+
+.read:hover{
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+.articleContain{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	padding: 5rem 0;
+	box-sizing: border-box;
+	position: relative;
+	background: #101010;
+}
+
+.articleInside{
+	width: 45%;
+}
+
+.articleHeading{
+	font-weight: 900;
+	color: white;
+}
+
+.articleDate{
+	color: #999;
+	font-size: 1rem;
+}
+
+.articleBody{
+	line-height: 1.5;
+	color: #ddd;
+}
+
+.articleLogo{
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	font-weight: 700;
+	color: white;
+}
+
+.black{
+	color: white;
+}
+
+.backButton{
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 0.1rem;
+}
+
+@media (max-width: 1000px){
+    .home{
+		height: 70vh;
+	}
+
+	.mainHome{
+		flex-direction: column;
+	}
+
+	.mainInfo{
+		align-items: center;
+	}
+
+	.infoContainer{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 70%;
+	}
+
+	.infoContainer > p{
+		text-align: center;
+		font-size: 1.2rem;
+	}
+
+	.infoContainer > h1{
+		font-size: 2.5rem;
+	}
+
+	.indexImage{
+		width: 30%;
+	}
+
+	.mainButtons{
+		margin-right: 0;
+		margin: 2rem 1rem;
+		font-size: 1.2rem;
+	}
+
+	.heading{
+		font-size: 2rem;
+		width: 50%;
+	}
+
+	.logo{
+		font-size: 0.75rem;
+	}
+
+	.home > p{
+		font-size: 1rem;
+	}
+
+	.articleLogo{
+		font-size: 1rem;
+	}
+
+	.articleInside{
+		width: 70%;
+	}
+
+}
+
+@media (max-width: 800px){
+    .home{
+    	height: 45rem;
+	}
+	
+
+}
+
+@media (min-width: 1000px)
+{
+	.indexImage{
+		width: 25rem;
+	}
+
+	.infoContainer > p{
+		font-size: 1.35rem;
+	}
+
+	.infoContainer > h1{
+		font-size: 3.5rem
+	}
+
+	.infoContainer{
+		width: 25rem;
+	}
+
+	.mainButtons{
+		margin-right: 1.5rem;
+		font-size: 1.35rem;
+	}
+
+	.heading{
+		font-size: 2.75rem;
+	}
+
+	.logo{
+		font-size: 1.25rem;
+	}
+
+	.home > p{
+		font-size: 1.4rem;
+	}
+
+	.articleLogo{
+		font-size: 1.25rem;
+	}
+
+	.articleInside{
+		width: 50%;
+	}
+}
+
+@media (min-width: 600px)
+{
+	.articleHeading{
+		font-size: 2.5rem;
+	}
+
+	.articleBody{
+		font-size: 1.25rem;
+	}
+
+	.backButton{
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 600px)
+{
+	.articleHeading{
+		font-size: 1.75rem;
+	}
+
+	.articleBody{
+		font-size: 1rem;
+	}
+
+	.backButton{
+		font-size: 1rem;
+	}
+}
+
+
+
+
+/* main home index */
+
+.mainHome{
+	height: 100%;
+	background: #101010;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.indexImage{
+	border-radius: 50%;
+	margin: 0 5rem;
+}
+
+.buttonContainer{
+	display: flex;
+}
+
+.mainButtons{
+	text-decoration: none;
+	color:#ddd;
+	padding: 0.2rem 0;
+}
+
+.mainButtons:hover{
+	border-bottom: 1px solid white;
+	color: white;
+	margin-bottom: -1px;
+}
+
+.mainInfo{
+	display: flex;
+	flex-direction: column;
+}
+
+.infoContainer{
+	/* width: 25rem; */
+}
+
+
+.infoContainer > h1{
+	color: white;
+	font-weight: 600;
+}
+
+.infoContainer > p{
+	color:#ccc;
+	line-height: 1.75;
+}
